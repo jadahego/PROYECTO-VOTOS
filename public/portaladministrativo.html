@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal administrativo</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<body>
+    <br>
+    <h1 style="text-align: center">Elecciones 2023</h1>
+    <p style="text-align:center">
+        A continuacion se presenta el portal administrativo de las elecciones 2023, donde el usuario con el rol admin
+        podra ingresar o añadir a los usuarios para que estos puedan vortar.
+    </p>
+    <hr>
+    <br>
+</body>
+
+<body>
+
+    <div class="col-sm-6" style="text-align: center">
+        <h1>Añadir personas</h1>
+        <hr>
+    
+        <form class="d-grid" >
+            
+            <input type="text" name="nombre" class="form-control mb-2" placeholder="Nombre completo"/>
+            <br>
+            <input type="text" name="apellido" class="form-control mb-2" placeholder="Apellido completo"/>
+            <br>
+            <input type="text" name="cedula" class="form-control mb-2" placeholder="Numero de identificacion"/>
+            <br>
+            <input type="text" name="localidad" class="form-control mb-2" placeholder="Ingrese el pais"/>
+            <br>
+           
+    
+            <button type="submit" class="btn btn-primary">
+                Añadir
+            </button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <body>
+
+        <div class="col-sm-6" style="text-align: center">
+            <h1>Crear Candidato</h1>
+            <hr>
+        
+            <form class="d-grid" id="miFormulario2">
+                
+                <input type="text" name="cedula" class="form-control mb-2" placeholder="Ingrese el numero de documento"/>
+                <br>
+                <input type="text" name="partido" class="form-control mb-2" placeholder="Ingrese el partido al que pertenece"/>
+                <br>
+                
+                <button type="submit" class="btn btn-success" id="botonSubmit2" >
+                    Crear
+                </button>
+            </form>
+        </div>
+    
+        <br>
+        <br>
+
+   
+    
+    
+
+    <script src="./js/portaladministrativo.js"></script>
+    
+</body>
+</html>

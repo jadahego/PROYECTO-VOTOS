@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glooge Sing-in</title>
+</head>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<body>
+    <br>
+    <h1 style="text-align: center">Elecciones 2023</h1>
+    <p style="text-align:center">
+        Las elecciones regionales de Colombia de 2023 se llevarán a cabo el 29 de octubre de 2023, con el fin de elegir los cargos de gobernadores para los 32 departamentos, 
+        diputados de las Asambleas Departamentales, alcaldes de 1.102 municipios, concejales municipales y ediles de las Juntas Administradoras Locales del territorio nacional.
+    </p>
+    <hr>
+    <br>
+</body>
+
+<body>
+
+    <div class="col-sm-6" style="text-align: center">
+        <h1>Ir a votar</h1>
+        <hr>
+    
+        <form class="d-grid" >
+            
+            <input type="text" name="nombre" class="form-control mb-2" placeholder="Nombre completo"/>
+            <br>
+            <input type="text" name="documento" class="form-control mb-2" placeholder="Numero de identificacion"/>
+            <br>
+    
+            <button type="submit" class="btn btn-primary">
+                Ingresar
+            </button>
+        </form>
+    </div>
+
+    <br>
+    <br>
+
+    <div class="col-sm-6">
+    <p>Administracion</p>
+    <hr>
+
+    <div id="g_id_onload"
+         data-client_id="220526835948-l735f6sguo1ugqm0rh6nhcn8d7bb6k10.apps.googleusercontent.com"
+         data-callback="handleCredentialResponse"
+         data-auto_prompt="false">
+      </div>
+      <div class="g_id_signin"
+         data-type="standard"
+         data-size="large"
+         data-theme="outline"
+         data-text="sign_in_with"
+         data-shape="rectangular"
+         data-logo_alignment="left">
+      </div>
+
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+
+    <button id="google_signout">
+        Signout
+    </button>
+    </div>
+    <br>
+    <br>
+
+    
+    
+
+    <script src="./js/auth.js"></script>
+
+</body>
+</html>
